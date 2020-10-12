@@ -14,3 +14,12 @@
   - `h(x)` là hàm cung cấp Heuristic. Trong bài có trình bày 2 cách tính Heuristic  
     - Áp dụng khoảng cách Manhattan: ![](https://latex.codecogs.com/svg.latex?\inline&space;h_{1}(x)=\sum_{i=1}^{2}|state_{i}&space;-&space;goal_{i}|)  
     - Tính ![](https://latex.codecogs.com/svg.latex?\inline&space;h_{2}(x)=\sum_{i=1}^{8}\delta&space;(state_{i},&space;goal_{i})) với ![](https://latex.codecogs.com/svg.latex?\inline&space;\delta&space;(state_{i},&space;goal_{i})=0\Leftrightarrow&space;state_{i}\equiv&space;goal_{i}) ; ![](https://latex.codecogs.com/svg.latex?\inline&space;\delta&space;(state_{i},&space;goal_{i})=1\Leftrightarrow&space;state_{i}\not\equiv&space;goal_{i})  
+
+## Giải thuật Greedy  
+
+- Chọn 1 bước kế tiếp dựa vào hàm `h(x)`  
+- Áp dụng 2 cách tính Heuristic như đã trình bày ở trên  
+
+## Giải thuật UCS  
+
+- Chọn 1 bước kế tiếp dựa vào hàm `g(x)` với định nghĩa hàm `g(x)` nêu trên  
