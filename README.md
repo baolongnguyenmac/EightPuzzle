@@ -12,7 +12,5 @@
 - Với:
   - `g(x)` là hàm cho biết số bước đi tính từ root đến trạng thái hiện tại  
   - `h(x)` là hàm cung cấp Heuristic. Trong bài có trình bày 2 cách tính Heuristic  
-    - Áp dụng khoảng cách Manhattan: ![](https://latex.codecogs.com/svg.latex?h_{1}(x)=\sum_{i=1}^{2}|state_{i}&space;-&space;goal_{i}|)  
-    - Tính ![](https://latex.codecogs.com/svg.latex?h_{2}(x)=\sum_{i=1}^{8}\delta&space;(state_{i},&space;goal_{i}))  
-    với  ![](https://latex.codecogs.com/svg.latex?\delta&space;(state_{i},&space;goal_{i})=0\Leftrightarrow&space;state_{i}\equiv&space;goal_{i})  
-    ![](https://latex.codecogs.com/svg.latex?\delta&space;(state_{i},&space;goal_{i})=1\Leftrightarrow&space;state_{i}\not\equiv&space;goal_{i})  
+    - Áp dụng khoảng cách Manhattan: ![](https://latex.codecogs.com/svg.latex?\inline&space;h_{1}(x)=\sum_{i=1}^{2}|state_{i}&space;-&space;goal_{i}|)  
+    - Tính ![](https://latex.codecogs.com/svg.latex?\inline&space;h_{2}(x)=\sum_{i=1}^{8}\delta&space;(state_{i},&space;goal_{i})) với ![](https://latex.codecogs.com/svg.latex?\inline&space;\delta&space;(state_{i},&space;goal_{i})=0\Leftrightarrow&space;state_{i}\equiv&space;goal_{i}) ; ![](https://latex.codecogs.com/svg.latex?\inline&space;\delta&space;(state_{i},&space;goal_{i})=1\Leftrightarrow&space;state_{i}\not\equiv&space;goal_{i})  
