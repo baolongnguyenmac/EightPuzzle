@@ -63,6 +63,7 @@ class SolveEightPuzzle:
                 if pos is not None and isVisited.get(pos) is None:
                     if pos.g > current.g + 1:
                         pos.g = current.g + 1
+                        pos.setF(current.g + 1, self.goal)
                         parent[pos] = current
                         self.push(f, pos)
 
@@ -82,7 +83,7 @@ class SolveEightPuzzle:
 
 
 def main():
-    s = SolveEightPuzzle(State.State(state=987654321), State.State(state=123456789))
+    s = SolveEightPuzzle(State.State(state=876543219), State.State(state=123456789))
     s.AStar()
 
 if __name__ == '__main__':
